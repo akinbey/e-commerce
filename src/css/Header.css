@@ -1,0 +1,105 @@
+/* Varsayılan stil */
+.logo {
+    width: 60px;
+    height: 60px;
+
+}
+
+.logo-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-input {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 1rem;
+    border-radius: 10px;
+    height: 1.3rem;
+}
+
+/* Küçük ekranlar için (max-width: 600px) */
+@media (max-width: 600px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 12px;
+    }
+
+    .search-input {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Orta boyutlu ekranlar için (min-width: 601px) ve (max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .search-input {
+        padding: 4px 9px;
+        font-size: 14px;
+    }
+}
+
+/* Büyük ekranlar için (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-size: 15px;
+    }
+
+    .search-input {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+.icons {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .icons {
+        font-size: 16px;
+        margin-right: 0.5vh;
+    }
+}
+
+/* Orta boyutlu ekranlar için */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .icons {
+        font-size: 18px;
+        margin-right: 0.75vh;
+    }
+}
+
+/* Büyük ekranlar için */
+@media (min-width: 1025px) {
+    .icons {
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+}

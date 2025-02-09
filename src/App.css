@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#root {
+    height: 100 vh;
+}
+
+
+
+
+
+  .product-price {
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 0.3rem; 
+  }
+  
+  .delete-button {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: rgb(185, 76, 76);
+    border: none;
+    color: #fff;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(150, 50, 50);
+  }
+  
+
+
+
+  /* Sepet Toplam Tutarı için stil */
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amount p {
+  margin: 0;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .total-amount {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .total-amount p {
+    font-size: 1rem;
+  }
+}
+
+
+
